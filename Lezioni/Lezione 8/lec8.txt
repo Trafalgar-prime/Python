@@ -1,0 +1,4 @@
+svolto la classificazione a oggetti attraverso le classi, i metodi e anche l'ereditarietà delle classi; inoltre anche casi in cui ci sono degli oggetti privati nelle classi
+
+
+nel codice di biblioteca.py è un ulteriore codice generato sull'approfondimento fatto con OOP ultra dettaglio

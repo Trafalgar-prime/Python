@@ -1,0 +1,1 @@
+trattiamo i dizionari, ovvero i dict, e anche i dizionari annidati, ottimi per catalogare

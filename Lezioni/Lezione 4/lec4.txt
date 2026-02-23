@@ -1,0 +1,1 @@
+vengono viste le liste, come scrivere un array di stringhe o di interi dando i valori da input, e come fare questo nel modo giusto

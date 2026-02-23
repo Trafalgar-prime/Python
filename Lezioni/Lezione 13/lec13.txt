@@ -1,0 +1,26 @@
+Il multi-threading è utile per operazioni di I/O, ma per sfruttare più core della CPU è meglio usare il multiprocessing.
+Il modulo multiprocessing permette di eseguire più processi separati, evitando il Global Interpreter Lock (GIL) di Python.
+| **Caratteristica**         | **Multi-threading**        | **Multiprocessing**      |
+| -------------------------- | -------------------------- | ------------------------ |
+| Usa più core della CPU?    | ❌ No (bloccato dal GIL)    | ✅ Sì                     |
+| Condivisione della memoria | ✅ Sì                       | ❌ No (processi separati) |
+| Utile per...               | I/O (file, rete, database) | Calcoli pesanti          |
+| Modulo Python              | `threading`                | `multiprocessing`        |
+
+🔹 Usa multiprocessing se devi eseguire calcoli pesanti su più core.
+🔹 Usa threading se devi gestire operazioni di I/O.
+
+| Funzione                                   | Descrizione                                   |
+| ------------------------------------------ | --------------------------------------------- |
+| `multiprocessing.Process(target=funzione)` | Crea un processo                              |
+| `process.start()`                          | Avvia il processo                             |
+| `process.join()`                           | Attende la fine del processo                  |
+| `process.is_alive()`                       | Controlla se un processo è ancora attivo      |
+| `multiprocessing.Queue()`                  | Crea una coda per scambiare dati tra processi |
+| `multiprocessing.Lock()`                   | Blocca l'accesso a una risorsa condivisa      |
+| `lock.acquire()`                           | Acquisisce il lock                            |
+| `lock.release()`                           | Rilascia il lock                              |
+| `multiprocessing.Pool(n)`                  | Crea un pool di `n` processi                  |
+
+
+Inoltre ho spiegato il multiprocess con più processi attivi e le varie differenze tra i sistemi operativi, perché con windows potrei ottenere dei problemi

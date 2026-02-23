@@ -1,0 +1,13 @@
+Il multi-threading permette a Python di eseguire più attività contemporaneamente all'interno dello stesso processo.
+Questa lezione ti insegnerà a creare, gestire e sincronizzare i thread in Python.
+Un thread è un'unità di esecuzione che può funzionare in parallelo con altri thread nello stesso programma.
+Python ha un modulo chiamato threading per gestire i thread.
+
+🔹 Vantaggi del Multi-threading:
+✅ Migliora la reattività di programmi con operazioni lente (I/O, rete).
+✅ Permette di eseguire più operazioni contemporaneamente.
+✅ Ottimizza l'uso della CPU in alcune situazioni.
+
+🔹 Limiti del Multi-threading in Python:
+❌ Python ha il Global Interpreter Lock (GIL) che limita il multi-threading per il calcolo pesante.
+❌ Meglio usare multiprocessing se vuoi sfruttare più core della CPU.

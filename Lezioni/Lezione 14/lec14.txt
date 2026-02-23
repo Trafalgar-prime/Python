@@ -1,0 +1,20 @@
+La programmazione asincrona consente di eseguire più operazioni contemporaneamente senza bloccare l'esecuzione del programma.
+A differenza di multi-threading e multiprocessing, asyncio usa un singolo thread con una gestione intelligente delle operazioni in attesa.
+
+| **Tecnologia**                           | **Descrizione**                                       | **Ideale per...**                     |
+| ---------------------------------------- | ----------------------------------------------------- | ------------------------------------- |
+| **Multi-threading (`threading`)**        | Più operazioni in parallelo in un thread separato     | I/O, rete                             |
+| **Multi-processing (`multiprocessing`)** | Usa più core CPU                                      | Calcoli pesanti                       |
+| **Asincrono (`asyncio`)**                | Esegue operazioni senza bloccare il thread principale | Operazioni lente (I/O, database, API) |
+
+
+| Funzione                            | Descrizione                                    |
+| ----------------------------------- | ---------------------------------------------- |
+| `asyncio.run(coroutine)`            | Esegue una funzione asincrona                  |
+| `async def nome_funzione()`         | Definisce una funzione asincrona               |
+| `await coroutine()`                 | Attende il risultato di una funzione asincrona |
+| `asyncio.sleep(n)`                  | Aspetta `n` secondi senza bloccare             |
+| `asyncio.gather(task1, task2, ...)` | Esegue più task in parallelo                   |
+| `asyncio.create_task(coroutine())`  | Crea e avvia un task                           |
+| `asyncio.wait_for(task, timeout=n)` | Imposta un timeout su un task                  |
+| `asyncio.Lock()`                    | Crea un lock per sincronizzare i task          |

@@ -1,0 +1,1 @@
+tutte le possibili operazioni, piu le operazioni con and or e cosi via, come si utilizza l'if l'else e l'else if

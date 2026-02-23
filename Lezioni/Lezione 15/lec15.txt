@@ -1,0 +1,3 @@
+I decoratori in Python sono funzioni speciali che permettono di modificare il comportamento di altre funzioni senza modificarne il codice direttamente. Sono ampiamente usati per logging, controllo accessi, misurazione delle performance, caching e molto altro.
+Un decoratore è una funzione che prende in input un’altra funzione e ne modifica il comportamento.
+In Python si applicano con il simbolo @ sopra una funzione.

@@ -1,0 +1,230 @@
+# PyTorch signatures (torch 2.10.0+cu128)
+
+## nn.Module layers
+
+- `nn.AdaptiveAvgPool1d(output_size: Union[int, NoneType, tuple[int | None, ...]]) -> None`
+- `nn.AdaptiveAvgPool2d(output_size: Union[int, NoneType, tuple[int | None, ...]]) -> None`
+- `nn.AdaptiveAvgPool3d(output_size: Union[int, NoneType, tuple[int | None, ...]]) -> None`
+- `nn.AdaptiveLogSoftmaxWithLoss(in_features: int, n_classes: int, cutoffs: collections.abc.Sequence[int], div_value: float = 4.0, head_bias: bool = False, device=None, dtype=None) -> None`
+- `nn.AdaptiveMaxPool1d(output_size: Union[int, NoneType, tuple[int | None, ...]], return_indices: bool = False) -> None`
+- `nn.AdaptiveMaxPool2d(output_size: Union[int, NoneType, tuple[int | None, ...]], return_indices: bool = False) -> None`
+- `nn.AdaptiveMaxPool3d(output_size: Union[int, NoneType, tuple[int | None, ...]], return_indices: bool = False) -> None`
+- `nn.AlphaDropout(p: float = 0.5, inplace: bool = False) -> None`
+- `nn.AvgPool1d(kernel_size: Union[int, tuple[int]], stride: Union[int, tuple[int]] = None, padding: Union[int, tuple[int]] = 0, ceil_mode: bool = False, count_include_pad: bool = True) -> None`
+- `nn.AvgPool2d(kernel_size: Union[int, tuple[int, int]], stride: Union[int, tuple[int, int], NoneType] = None, padding: Union[int, tuple[int, int]] = 0, ceil_mode: bool = False, count_include_pad: bool = True, divisor_override: int | None = None) -> None`
+- `nn.AvgPool3d(kernel_size: Union[int, tuple[int, int, int]], stride: Union[int, tuple[int, int, int], NoneType] = None, padding: Union[int, tuple[int, int, int]] = 0, ceil_mode: bool = False, count_include_pad: bool = True, divisor_override: int | None = None) -> None`
+- `nn.BatchNorm1d(num_features: int, eps: float = 1e-05, momentum: float | None = 0.1, affine: bool = True, track_running_stats: bool = True, device=None, dtype=None) -> None`
+- `nn.BatchNorm2d(num_features: int, eps: float = 1e-05, momentum: float | None = 0.1, affine: bool = True, track_running_stats: bool = True, device=None, dtype=None) -> None`
+- `nn.BatchNorm3d(num_features: int, eps: float = 1e-05, momentum: float | None = 0.1, affine: bool = True, track_running_stats: bool = True, device=None, dtype=None) -> None`
+- `nn.BCELoss(weight: torch.Tensor | None = None, size_average=None, reduce=None, reduction: str = 'mean') -> None`
+- `nn.BCEWithLogitsLoss(weight: torch.Tensor | None = None, size_average=None, reduce=None, reduction: str = 'mean', pos_weight: torch.Tensor | None = None) -> None`
+- `nn.Bilinear(in1_features: int, in2_features: int, out_features: int, bias: bool = True, device=None, dtype=None) -> None`
+- `nn.CELU(alpha: float = 1.0, inplace: bool = False) -> None`
+- `nn.ChannelShuffle(groups: int) -> None`
+- `nn.CircularPad1d(padding: Union[int, tuple[int, int]]) -> None`
+- `nn.CircularPad2d(padding: Union[int, tuple[int, int, int, int]]) -> None`
+- `nn.CircularPad3d(padding: Union[int, tuple[int, int, int, int, int, int]]) -> None`
+- `nn.ConstantPad1d(padding: Union[int, tuple[int, int]], value: float) -> None`
+- `nn.ConstantPad2d(padding: Union[int, tuple[int, int, int, int]], value: float) -> None`
+- `nn.ConstantPad3d(padding: Union[int, tuple[int, int, int, int, int, int]], value: float) -> None`
+- `nn.Container(*args, **kwargs)`
+- `nn.Conv1d(in_channels: int, out_channels: int, kernel_size: Union[int, tuple[int]], stride: Union[int, tuple[int]] = 1, padding: Union[str, int, tuple[int]] = 0, dilation: Union[int, tuple[int]] = 1, groups: int = 1, bias: bool = True, padding_mode: Literal['zeros', 'reflect', 'replicate', 'circular'] = 'zeros', device=None, dtype=None) -> None`
+- `nn.Conv2d(in_channels: int, out_channels: int, kernel_size: Union[int, tuple[int, int]], stride: Union[int, tuple[int, int]] = 1, padding: Union[str, int, tuple[int, int]] = 0, dilation: Union[int, tuple[int, int]] = 1, groups: int = 1, bias: bool = True, padding_mode: Literal['zeros', 'reflect', 'replicate', 'circular'] = 'zeros', device=None, dtype=None) -> None`
+- `nn.Conv3d(in_channels: int, out_channels: int, kernel_size: Union[int, tuple[int, int, int]], stride: Union[int, tuple[int, int, int]] = 1, padding: Union[str, int, tuple[int, int, int]] = 0, dilation: Union[int, tuple[int, int, int]] = 1, groups: int = 1, bias: bool = True, padding_mode: Literal['zeros', 'reflect', 'replicate', 'circular'] = 'zeros', device=None, dtype=None) -> None`
+- `nn.ConvTranspose1d(in_channels: int, out_channels: int, kernel_size: Union[int, tuple[int]], stride: Union[int, tuple[int]] = 1, padding: Union[int, tuple[int]] = 0, output_padding: Union[int, tuple[int]] = 0, groups: int = 1, bias: bool = True, dilation: Union[int, tuple[int]] = 1, padding_mode: Literal['zeros', 'reflect', 'replicate', 'circular'] = 'zeros', device=None, dtype=None) -> None`
+- `nn.ConvTranspose2d(in_channels: int, out_channels: int, kernel_size: Union[int, tuple[int, int]], stride: Union[int, tuple[int, int]] = 1, padding: Union[int, tuple[int, int]] = 0, output_padding: Union[int, tuple[int, int]] = 0, groups: int = 1, bias: bool = True, dilation: Union[int, tuple[int, int]] = 1, padding_mode: Literal['zeros', 'reflect', 'replicate', 'circular'] = 'zeros', device=None, dtype=None) -> None`
+- `nn.ConvTranspose3d(in_channels: int, out_channels: int, kernel_size: Union[int, tuple[int, int, int]], stride: Union[int, tuple[int, int, int]] = 1, padding: Union[int, tuple[int, int, int]] = 0, output_padding: Union[int, tuple[int, int, int]] = 0, groups: int = 1, bias: bool = True, dilation: Union[int, tuple[int, int, int]] = 1, padding_mode: Literal['zeros', 'reflect', 'replicate', 'circular'] = 'zeros', device=None, dtype=None) -> None`
+- `nn.CosineEmbeddingLoss(margin: float = 0.0, size_average=None, reduce=None, reduction: str = 'mean') -> None`
+- `nn.CosineSimilarity(dim: int = 1, eps: float = 1e-08) -> None`
+- `nn.CrossEntropyLoss(weight: torch.Tensor | None = None, size_average=None, ignore_index: int = -100, reduce=None, reduction: str = 'mean', label_smoothing: float = 0.0) -> None`
+- `nn.CrossMapLRN2d(size: int, alpha: float = 0.0001, beta: float = 0.75, k: float = 1) -> None`
+- `nn.CTCLoss(blank: int = 0, reduction: str = 'mean', zero_infinity: bool = False) -> None`
+- `nn.DataParallel(module: ~T, device_ids: collections.abc.Sequence[int | torch.device] | None = None, output_device: int | torch.device | None = None, dim: int = 0) -> None`
+- `nn.Dropout(p: float = 0.5, inplace: bool = False) -> None`
+- `nn.Dropout1d(p: float = 0.5, inplace: bool = False) -> None`
+- `nn.Dropout2d(p: float = 0.5, inplace: bool = False) -> None`
+- `nn.Dropout3d(p: float = 0.5, inplace: bool = False) -> None`
+- `nn.ELU(alpha: float = 1.0, inplace: bool = False) -> None`
+- `nn.Embedding(num_embeddings: int, embedding_dim: int, padding_idx: int | None = None, max_norm: float | None = None, norm_type: float = 2.0, scale_grad_by_freq: bool = False, sparse: bool = False, _weight: torch.Tensor | None = None, _freeze: bool = False, device=None, dtype=None) -> None`
+- `nn.EmbeddingBag(num_embeddings: int, embedding_dim: int, max_norm: float | None = None, norm_type: float = 2.0, scale_grad_by_freq: bool = False, mode: str = 'mean', sparse: bool = False, _weight: torch.Tensor | None = None, include_last_offset: bool = False, padding_idx: int | None = None, device=None, dtype=None) -> None`
+- `nn.FeatureAlphaDropout(p: float = 0.5, inplace: bool = False) -> None`
+- `nn.Flatten(start_dim: int = 1, end_dim: int = -1) -> None`
+- `nn.Fold(output_size: Union[int, tuple[int, ...]], kernel_size: Union[int, tuple[int, ...]], dilation: Union[int, tuple[int, ...]] = 1, padding: Union[int, tuple[int, ...]] = 0, stride: Union[int, tuple[int, ...]] = 1) -> None`
+- `nn.FractionalMaxPool2d(kernel_size: Union[int, tuple[int, int]], output_size: Union[int, tuple[int, int], NoneType] = None, output_ratio: Union[float, tuple[float, float], NoneType] = None, return_indices: bool = False, _random_samples=None) -> None`
+- `nn.FractionalMaxPool3d(kernel_size: Union[int, tuple[int, int, int]], output_size: Union[int, tuple[int, int, int], NoneType] = None, output_ratio: Union[float, tuple[float, float, float], NoneType] = None, return_indices: bool = False, _random_samples=None) -> None`
+- `nn.GaussianNLLLoss(*, full: bool = False, eps: float = 1e-06, reduction: str = 'mean') -> None`
+- `nn.GELU(approximate: str = 'none') -> None`
+- `nn.GLU(dim: int = -1) -> None`
+- `nn.GroupNorm(num_groups: int, num_channels: int, eps: float = 1e-05, affine: bool = True, device=None, dtype=None) -> None`
+- `nn.GRU(*args, **kwargs)`
+- `nn.GRUCell(input_size: int, hidden_size: int, bias: bool = True, device=None, dtype=None) -> None`
+- `nn.Hardshrink(lambd: float = 0.5) -> None`
+- `nn.Hardsigmoid(inplace: bool = False) -> None`
+- `nn.Hardswish(inplace: bool = False) -> None`
+- `nn.Hardtanh(min_val: float = -1.0, max_val: float = 1.0, inplace: bool = False, min_value: float | None = None, max_value: float | None = None) -> None`
+- `nn.HingeEmbeddingLoss(margin: float = 1.0, size_average=None, reduce=None, reduction: str = 'mean') -> None`
+- `nn.HuberLoss(reduction: str = 'mean', delta: float = 1.0) -> None`
+- `nn.Identity(*args: Any, **kwargs: Any) -> None`
+- `nn.InstanceNorm1d(num_features: int, eps: float = 1e-05, momentum: float = 0.1, affine: bool = False, track_running_stats: bool = False, device=None, dtype=None) -> None`
+- `nn.InstanceNorm2d(num_features: int, eps: float = 1e-05, momentum: float = 0.1, affine: bool = False, track_running_stats: bool = False, device=None, dtype=None) -> None`
+- `nn.InstanceNorm3d(num_features: int, eps: float = 1e-05, momentum: float = 0.1, affine: bool = False, track_running_stats: bool = False, device=None, dtype=None) -> None`
+- `nn.KLDivLoss(size_average=None, reduce=None, reduction: str = 'mean', log_target: bool = False) -> None`
+- `nn.L1Loss(size_average=None, reduce=None, reduction: str = 'mean') -> None`
+- `nn.LayerNorm(normalized_shape: Union[int, list[int], torch.Size], eps: float = 1e-05, elementwise_affine: bool = True, bias: bool = True, device=None, dtype=None) -> None`
+- `nn.LazyBatchNorm1d(eps=1e-05, momentum=0.1, affine=True, track_running_stats=True, device=None, dtype=None) -> None`
+- `nn.LazyBatchNorm2d(eps=1e-05, momentum=0.1, affine=True, track_running_stats=True, device=None, dtype=None) -> None`
+- `nn.LazyBatchNorm3d(eps=1e-05, momentum=0.1, affine=True, track_running_stats=True, device=None, dtype=None) -> None`
+- `nn.LazyConv1d(out_channels: int, kernel_size: Union[int, tuple[int]], stride: Union[int, tuple[int]] = 1, padding: Union[int, tuple[int]] = 0, dilation: Union[int, tuple[int]] = 1, groups: int = 1, bias: bool = True, padding_mode: Literal['zeros', 'reflect', 'replicate', 'circular'] = 'zeros', device=None, dtype=None) -> None`
+- `nn.LazyConv2d(out_channels: int, kernel_size: Union[int, tuple[int, int]], stride: Union[int, tuple[int, int]] = 1, padding: Union[int, tuple[int, int]] = 0, dilation: Union[int, tuple[int, int]] = 1, groups: int = 1, bias: bool = True, padding_mode: Literal['zeros', 'reflect', 'replicate', 'circular'] = 'zeros', device=None, dtype=None) -> None`
+- `nn.LazyConv3d(out_channels: int, kernel_size: Union[int, tuple[int, int, int]], stride: Union[int, tuple[int, int, int]] = 1, padding: Union[int, tuple[int, int, int]] = 0, dilation: Union[int, tuple[int, int, int]] = 1, groups: int = 1, bias: bool = True, padding_mode: Literal['zeros', 'reflect', 'replicate', 'circular'] = 'zeros', device=None, dtype=None) -> None`
+- `nn.LazyConvTranspose1d(out_channels: int, kernel_size: Union[int, tuple[int]], stride: Union[int, tuple[int]] = 1, padding: Union[int, tuple[int]] = 0, output_padding: Union[int, tuple[int]] = 0, groups: int = 1, bias: bool = True, dilation: Union[int, tuple[int]] = 1, padding_mode: Literal['zeros', 'reflect', 'replicate', 'circular'] = 'zeros', device=None, dtype=None) -> None`
+- `nn.LazyConvTranspose2d(out_channels: int, kernel_size: Union[int, tuple[int, int]], stride: Union[int, tuple[int, int]] = 1, padding: Union[int, tuple[int, int]] = 0, output_padding: Union[int, tuple[int, int]] = 0, groups: int = 1, bias: bool = True, dilation: int = 1, padding_mode: Literal['zeros', 'reflect', 'replicate', 'circular'] = 'zeros', device=None, dtype=None) -> None`
+- `nn.LazyConvTranspose3d(out_channels: int, kernel_size: Union[int, tuple[int, int, int]], stride: Union[int, tuple[int, int, int]] = 1, padding: Union[int, tuple[int, int, int]] = 0, output_padding: Union[int, tuple[int, int, int]] = 0, groups: int = 1, bias: bool = True, dilation: Union[int, tuple[int, int, int]] = 1, padding_mode: Literal['zeros', 'reflect', 'replicate', 'circular'] = 'zeros', device=None, dtype=None) -> None`
+- `nn.LazyInstanceNorm1d(eps=1e-05, momentum=0.1, affine=True, track_running_stats=True, device=None, dtype=None) -> None`
+- `nn.LazyInstanceNorm2d(eps=1e-05, momentum=0.1, affine=True, track_running_stats=True, device=None, dtype=None) -> None`
+- `nn.LazyInstanceNorm3d(eps=1e-05, momentum=0.1, affine=True, track_running_stats=True, device=None, dtype=None) -> None`
+- `nn.LazyLinear(out_features: int, bias: bool = True, device=None, dtype=None) -> None`
+- `nn.LeakyReLU(negative_slope: float = 0.01, inplace: bool = False) -> None`
+- `nn.Linear(in_features: int, out_features: int, bias: bool = True, device=None, dtype=None) -> None`
+- `nn.LocalResponseNorm(size: int, alpha: float = 0.0001, beta: float = 0.75, k: float = 1.0) -> None`
+- `nn.LogSigmoid(*args: Any, **kwargs: Any) -> None`
+- `nn.LogSoftmax(dim: int | None = None) -> None`
+- `nn.LPPool1d(norm_type: float, kernel_size: Union[int, tuple[int, ...]], stride: Union[int, tuple[int, ...], NoneType] = None, ceil_mode: bool = False) -> None`
+- `nn.LPPool2d(norm_type: float, kernel_size: Union[int, tuple[int, ...]], stride: Union[int, tuple[int, ...], NoneType] = None, ceil_mode: bool = False) -> None`
+- `nn.LPPool3d(norm_type: float, kernel_size: Union[int, tuple[int, ...]], stride: Union[int, tuple[int, ...], NoneType] = None, ceil_mode: bool = False) -> None`
+- `nn.LSTM(*args, **kwargs)`
+- `nn.LSTMCell(input_size: int, hidden_size: int, bias: bool = True, device=None, dtype=None) -> None`
+- `nn.MarginRankingLoss(margin: float = 0.0, size_average=None, reduce=None, reduction: str = 'mean') -> None`
+- `nn.MaxPool1d(kernel_size: Union[int, tuple[int, ...]], stride: Union[int, tuple[int, ...], NoneType] = None, padding: Union[int, tuple[int, ...]] = 0, dilation: Union[int, tuple[int, ...]] = 1, return_indices: bool = False, ceil_mode: bool = False) -> None`
+- `nn.MaxPool2d(kernel_size: Union[int, tuple[int, ...]], stride: Union[int, tuple[int, ...], NoneType] = None, padding: Union[int, tuple[int, ...]] = 0, dilation: Union[int, tuple[int, ...]] = 1, return_indices: bool = False, ceil_mode: bool = False) -> None`
+- `nn.MaxPool3d(kernel_size: Union[int, tuple[int, ...]], stride: Union[int, tuple[int, ...], NoneType] = None, padding: Union[int, tuple[int, ...]] = 0, dilation: Union[int, tuple[int, ...]] = 1, return_indices: bool = False, ceil_mode: bool = False) -> None`
+- `nn.MaxUnpool1d(kernel_size: Union[int, tuple[int]], stride: Union[int, tuple[int], NoneType] = None, padding: Union[int, tuple[int]] = 0) -> None`
+- `nn.MaxUnpool2d(kernel_size: Union[int, tuple[int, int]], stride: Union[int, tuple[int, int], NoneType] = None, padding: Union[int, tuple[int, int]] = 0) -> None`
+- `nn.MaxUnpool3d(kernel_size: Union[int, tuple[int, int, int]], stride: Union[int, tuple[int, int, int], NoneType] = None, padding: Union[int, tuple[int, int, int]] = 0) -> None`
+- `nn.Mish(inplace: bool = False) -> None`
+- `nn.Module(*args: Any, **kwargs: Any) -> None`
+- `nn.ModuleDict(modules: 'Mapping[str, Module] | None' = None) -> 'None'`
+- `nn.ModuleList(modules: 'Iterable[Module] | None' = None) -> 'None'`
+- `nn.MSELoss(size_average=None, reduce=None, reduction: str = 'mean') -> None`
+- `nn.MultiheadAttention(embed_dim, num_heads, dropout=0.0, bias=True, add_bias_kv=False, add_zero_attn=False, kdim=None, vdim=None, batch_first=False, device=None, dtype=None) -> None`
+- `nn.MultiLabelMarginLoss(size_average=None, reduce=None, reduction: str = 'mean') -> None`
+- `nn.MultiLabelSoftMarginLoss(weight: torch.Tensor | None = None, size_average=None, reduce=None, reduction: str = 'mean') -> None`
+- `nn.MultiMarginLoss(p: int = 1, margin: float = 1.0, weight: torch.Tensor | None = None, size_average=None, reduce=None, reduction: str = 'mean') -> None`
+- `nn.NLLLoss(weight: torch.Tensor | None = None, size_average=None, ignore_index: int = -100, reduce=None, reduction: str = 'mean') -> None`
+- `nn.NLLLoss2d(*args, **kwargs)`
+- `nn.PairwiseDistance(p: float = 2.0, eps: float = 1e-06, keepdim: bool = False) -> None`
+- `nn.ParameterDict(parameters: 'Any' = None) -> 'None'`
+- `nn.ParameterList(values: 'Iterable[Any] | None' = None) -> 'None'`
+- `nn.PixelShuffle(upscale_factor: int) -> None`
+- `nn.PixelUnshuffle(downscale_factor: int) -> None`
+- `nn.PoissonNLLLoss(log_input: bool = True, full: bool = False, size_average=None, eps: float = 1e-08, reduce=None, reduction: str = 'mean') -> None`
+- `nn.PReLU(num_parameters: int = 1, init: float = 0.25, device=None, dtype=None) -> None`
+- `nn.ReflectionPad1d(padding: Union[int, tuple[int, int]]) -> None`
+- `nn.ReflectionPad2d(padding: Union[int, tuple[int, int, int, int]]) -> None`
+- `nn.ReflectionPad3d(padding: Union[int, tuple[int, int, int, int, int, int]]) -> None`
+- `nn.ReLU(inplace: bool = False) -> None`
+- `nn.ReLU6(inplace: bool = False) -> None`
+- `nn.ReplicationPad1d(padding: Union[int, tuple[int, int]]) -> None`
+- `nn.ReplicationPad2d(padding: Union[int, tuple[int, int, int, int]]) -> None`
+- `nn.ReplicationPad3d(padding: Union[int, tuple[int, int, int, int, int, int]]) -> None`
+- `nn.RMSNorm(normalized_shape: Union[int, list[int], torch.Size], eps: float | None = None, elementwise_affine: bool = True, device=None, dtype=None) -> None`
+- `nn.RNN(*args, **kwargs)`
+- `nn.RNNBase(mode: str, input_size: int, hidden_size: int, num_layers: int = 1, bias: bool = True, batch_first: bool = False, dropout: float = 0.0, bidirectional: bool = False, proj_size: int = 0, device=None, dtype=None) -> None`
+- `nn.RNNCell(input_size: int, hidden_size: int, bias: bool = True, nonlinearity: str = 'tanh', device=None, dtype=None) -> None`
+- `nn.RNNCellBase(input_size: int, hidden_size: int, bias: bool, num_chunks: int, device=None, dtype=None) -> None`
+- `nn.RReLU(lower: float = 0.125, upper: float = 0.3333333333333333, inplace: bool = False) -> None`
+- `nn.SELU(inplace: bool = False) -> None`
+- `nn.Sequential(*args)`
+- `nn.Sigmoid(*args: Any, **kwargs: Any) -> None`
+- `nn.SiLU(inplace: bool = False) -> None`
+- `nn.SmoothL1Loss(size_average=None, reduce=None, reduction: str = 'mean', beta: float = 1.0) -> None`
+- `nn.SoftMarginLoss(size_average=None, reduce=None, reduction: str = 'mean') -> None`
+- `nn.Softmax(dim: int | None = None) -> None`
+- `nn.Softmax2d(*args: Any, **kwargs: Any) -> None`
+- `nn.Softmin(dim: int | None = None) -> None`
+- `nn.Softplus(beta: float = 1.0, threshold: float = 20.0) -> None`
+- `nn.Softshrink(lambd: float = 0.5) -> None`
+- `nn.Softsign(*args: Any, **kwargs: Any) -> None`
+- `nn.SyncBatchNorm(num_features: int, eps: float = 1e-05, momentum: float | None = 0.1, affine: bool = True, track_running_stats: bool = True, process_group: typing.Any | None = None, device=None, dtype=None) -> None`
+- `nn.Tanh(*args: Any, **kwargs: Any) -> None`
+- `nn.Tanhshrink(*args: Any, **kwargs: Any) -> None`
+- `nn.Threshold(threshold: float, value: float, inplace: bool = False) -> None`
+- `nn.Transformer(d_model: int = 512, nhead: int = 8, num_encoder_layers: int = 6, num_decoder_layers: int = 6, dim_feedforward: int = 2048, dropout: float = 0.1, activation: str | collections.abc.Callable[[torch.Tensor], torch.Tensor] = <function relu at 0x71afb351eac0>, custom_encoder: typing.Any | None = None, custom_decoder: typing.Any | None = None, layer_norm_eps: float = 1e-05, batch_first: bool = False, norm_first: bool = False, bias: bool = True, device=None, dtype=None) -> None`
+- `nn.TransformerDecoder(decoder_layer: 'TransformerDecoderLayer', num_layers: int, norm: torch.nn.modules.module.Module | None = None) -> None`
+- `nn.TransformerDecoderLayer(d_model: int, nhead: int, dim_feedforward: int = 2048, dropout: float = 0.1, activation: str | collections.abc.Callable[[torch.Tensor], torch.Tensor] = <function relu at 0x71afb351eac0>, layer_norm_eps: float = 1e-05, batch_first: bool = False, norm_first: bool = False, bias: bool = True, device=None, dtype=None) -> None`
+- `nn.TransformerEncoder(encoder_layer: 'TransformerEncoderLayer', num_layers: int, norm: torch.nn.modules.module.Module | None = None, enable_nested_tensor: bool = True, mask_check: bool = True) -> None`
+- `nn.TransformerEncoderLayer(d_model: int, nhead: int, dim_feedforward: int = 2048, dropout: float = 0.1, activation: str | collections.abc.Callable[[torch.Tensor], torch.Tensor] = <function relu at 0x71afb351eac0>, layer_norm_eps: float = 1e-05, batch_first: bool = False, norm_first: bool = False, bias: bool = True, device=None, dtype=None) -> None`
+- `nn.TripletMarginLoss(margin: float = 1.0, p: float = 2.0, eps: float = 1e-06, swap: bool = False, size_average=None, reduce=None, reduction: str = 'mean') -> None`
+- `nn.TripletMarginWithDistanceLoss(*, distance_function: collections.abc.Callable[[torch.Tensor, torch.Tensor], torch.Tensor] | None = None, margin: float = 1.0, swap: bool = False, reduction: str = 'mean') -> None`
+- `nn.Unflatten(dim: int | str, unflattened_size: torch.Size | list[int] | tuple[int, ...] | tuple[tuple[str, int]]) -> None`
+- `nn.Unfold(kernel_size: Union[int, tuple[int, ...]], dilation: Union[int, tuple[int, ...]] = 1, padding: Union[int, tuple[int, ...]] = 0, stride: Union[int, tuple[int, ...]] = 1) -> None`
+- `nn.Upsample(size: Union[int, tuple[int, ...], NoneType] = None, scale_factor: Union[float, tuple[float, ...], NoneType] = None, mode: str = 'nearest', align_corners: bool | None = None, recompute_scale_factor: bool | None = None) -> None`
+- `nn.UpsamplingBilinear2d(size: Union[int, tuple[int, int], NoneType] = None, scale_factor: Union[float, tuple[float, float], NoneType] = None) -> None`
+- `nn.UpsamplingNearest2d(size: Union[int, tuple[int, int], NoneType] = None, scale_factor: Union[float, tuple[float, float], NoneType] = None) -> None`
+- `nn.ZeroPad1d(padding: Union[int, tuple[int, int]]) -> None`
+- `nn.ZeroPad2d(padding: Union[int, tuple[int, int, int, int]]) -> None`
+- `nn.ZeroPad3d(padding: Union[int, tuple[int, int, int, int, int, int]]) -> None`
+
+## Loss functions (classes)
+
+- `nn.BCELoss(weight: torch.Tensor | None = None, size_average=None, reduce=None, reduction: str = 'mean') -> None`
+- `nn.BCEWithLogitsLoss(weight: torch.Tensor | None = None, size_average=None, reduce=None, reduction: str = 'mean', pos_weight: torch.Tensor | None = None) -> None`
+- `nn.CosineEmbeddingLoss(margin: float = 0.0, size_average=None, reduce=None, reduction: str = 'mean') -> None`
+- `nn.CrossEntropyLoss(weight: torch.Tensor | None = None, size_average=None, ignore_index: int = -100, reduce=None, reduction: str = 'mean', label_smoothing: float = 0.0) -> None`
+- `nn.CTCLoss(blank: int = 0, reduction: str = 'mean', zero_infinity: bool = False) -> None`
+- `nn.GaussianNLLLoss(*, full: bool = False, eps: float = 1e-06, reduction: str = 'mean') -> None`
+- `nn.HingeEmbeddingLoss(margin: float = 1.0, size_average=None, reduce=None, reduction: str = 'mean') -> None`
+- `nn.HuberLoss(reduction: str = 'mean', delta: float = 1.0) -> None`
+- `nn.KLDivLoss(size_average=None, reduce=None, reduction: str = 'mean', log_target: bool = False) -> None`
+- `nn.L1Loss(size_average=None, reduce=None, reduction: str = 'mean') -> None`
+- `nn.MarginRankingLoss(margin: float = 0.0, size_average=None, reduce=None, reduction: str = 'mean') -> None`
+- `nn.MSELoss(size_average=None, reduce=None, reduction: str = 'mean') -> None`
+- `nn.MultiLabelMarginLoss(size_average=None, reduce=None, reduction: str = 'mean') -> None`
+- `nn.MultiLabelSoftMarginLoss(weight: torch.Tensor | None = None, size_average=None, reduce=None, reduction: str = 'mean') -> None`
+- `nn.MultiMarginLoss(p: int = 1, margin: float = 1.0, weight: torch.Tensor | None = None, size_average=None, reduce=None, reduction: str = 'mean') -> None`
+- `nn.NLLLoss(weight: torch.Tensor | None = None, size_average=None, ignore_index: int = -100, reduce=None, reduction: str = 'mean') -> None`
+- `nn.NLLLoss2d(*args, **kwargs)`
+- `nn.PoissonNLLLoss(log_input: bool = True, full: bool = False, size_average=None, eps: float = 1e-08, reduce=None, reduction: str = 'mean') -> None`
+- `nn.SmoothL1Loss(size_average=None, reduce=None, reduction: str = 'mean', beta: float = 1.0) -> None`
+- `nn.SoftMarginLoss(size_average=None, reduce=None, reduction: str = 'mean') -> None`
+- `nn.TripletMarginLoss(margin: float = 1.0, p: float = 2.0, eps: float = 1e-06, swap: bool = False, size_average=None, reduce=None, reduction: str = 'mean') -> None`
+- `nn.TripletMarginWithDistanceLoss(*, distance_function: collections.abc.Callable[[torch.Tensor, torch.Tensor], torch.Tensor] | None = None, margin: float = 1.0, swap: bool = False, reduction: str = 'mean') -> None`
+
+## Optimizers
+
+- `optim.Adadelta(params: collections.abc.Iterable[torch.Tensor] | collections.abc.Iterable[dict[str, typing.Any]] | collections.abc.Iterable[tuple[str, torch.Tensor]], lr: float | torch.Tensor = 1.0, rho: float = 0.9, eps: float = 1e-06, weight_decay: float = 0, foreach: bool | None = None, *, capturable: bool = False, maximize: bool = False, differentiable: bool = False) -> None`
+- `optim.Adafactor(params: collections.abc.Iterable[torch.Tensor] | collections.abc.Iterable[dict[str, typing.Any]] | collections.abc.Iterable[tuple[str, torch.Tensor]], lr: float | torch.Tensor = 0.01, beta2_decay: float = -0.8, eps: tuple[float | None, float] = (None, 0.001), d: float = 1.0, weight_decay: float = 0.0, *, foreach: bool | None = None, maximize: bool = False) -> None`
+- `optim.Adagrad(params: collections.abc.Iterable[torch.Tensor] | collections.abc.Iterable[dict[str, typing.Any]] | collections.abc.Iterable[tuple[str, torch.Tensor]], lr: float | torch.Tensor = 0.01, lr_decay: float = 0, weight_decay: float = 0, initial_accumulator_value: float = 0, eps: float = 1e-10, foreach: bool | None = None, *, maximize: bool = False, differentiable: bool = False, fused: bool | None = None) -> None`
+- `optim.Adam(params: collections.abc.Iterable[torch.Tensor] | collections.abc.Iterable[dict[str, typing.Any]] | collections.abc.Iterable[tuple[str, torch.Tensor]], lr: float | torch.Tensor = 0.001, betas: tuple[float | torch.Tensor, float | torch.Tensor] = (0.9, 0.999), eps: float = 1e-08, weight_decay: float = 0, amsgrad: bool = False, *, foreach: bool | None = None, maximize: bool = False, capturable: bool = False, differentiable: bool = False, fused: bool | None = None, decoupled_weight_decay: bool = False) -> None`
+- `optim.Adamax(params: collections.abc.Iterable[torch.Tensor] | collections.abc.Iterable[dict[str, typing.Any]] | collections.abc.Iterable[tuple[str, torch.Tensor]], lr: float | torch.Tensor = 0.002, betas: tuple[float, float] = (0.9, 0.999), eps: float = 1e-08, weight_decay: float = 0, foreach: bool | None = None, *, maximize: bool = False, differentiable: bool = False, capturable: bool = False) -> None`
+- `optim.AdamW(params: collections.abc.Iterable[torch.Tensor] | collections.abc.Iterable[dict[str, typing.Any]] | collections.abc.Iterable[tuple[str, torch.Tensor]], lr: float | torch.Tensor = 0.001, betas: tuple[float | torch.Tensor, float | torch.Tensor] = (0.9, 0.999), eps: float = 1e-08, weight_decay: float = 0.01, amsgrad: bool = False, *, maximize: bool = False, foreach: bool | None = None, capturable: bool = False, differentiable: bool = False, fused: bool | None = None) -> None`
+- `optim.ASGD(params: collections.abc.Iterable[torch.Tensor] | collections.abc.Iterable[dict[str, typing.Any]] | collections.abc.Iterable[tuple[str, torch.Tensor]], lr: float | torch.Tensor = 0.01, lambd: float = 0.0001, alpha: float = 0.75, t0: float = 1000000.0, weight_decay: float = 0, foreach: bool | None = None, maximize: bool = False, differentiable: bool = False, capturable: bool = False) -> None`
+- `optim.LBFGS(params: collections.abc.Iterable[torch.Tensor] | collections.abc.Iterable[dict[str, typing.Any]] | collections.abc.Iterable[tuple[str, torch.Tensor]], lr: float | torch.Tensor = 1, max_iter: int = 20, max_eval: int | None = None, tolerance_grad: float = 1e-07, tolerance_change: float = 1e-09, history_size: int = 100, line_search_fn: str | None = None) -> None`
+- `optim.Muon(params: collections.abc.Iterable[torch.Tensor] | collections.abc.Iterable[dict[str, typing.Any]] | collections.abc.Iterable[tuple[str, torch.Tensor]], lr: float = 0.001, weight_decay: float = 0.1, momentum: float = 0.95, nesterov: bool = True, ns_coefficients: tuple[float, float, float] = (3.4445, -4.775, 2.0315), eps: float = 1e-07, ns_steps: int = 5, adjust_lr_fn: str | None = None) -> None`
+- `optim.NAdam(params: collections.abc.Iterable[torch.Tensor] | collections.abc.Iterable[dict[str, typing.Any]] | collections.abc.Iterable[tuple[str, torch.Tensor]], lr: float | torch.Tensor = 0.002, betas: tuple[float, float] = (0.9, 0.999), eps: float = 1e-08, weight_decay: float = 0, momentum_decay: float = 0.004, decoupled_weight_decay: bool = False, *, foreach: bool | None = None, maximize: bool = False, capturable: bool = False, differentiable: bool = False) -> None`
+- `optim.Optimizer(params: collections.abc.Iterable[torch.Tensor] | collections.abc.Iterable[dict[str, typing.Any]] | collections.abc.Iterable[tuple[str, torch.Tensor]], defaults: dict[str, typing.Any]) -> None`
+- `optim.RAdam(params: collections.abc.Iterable[torch.Tensor] | collections.abc.Iterable[dict[str, typing.Any]] | collections.abc.Iterable[tuple[str, torch.Tensor]], lr: float | torch.Tensor = 0.001, betas: tuple[float, float] = (0.9, 0.999), eps: float = 1e-08, weight_decay: float = 0, decoupled_weight_decay: bool = False, *, foreach: bool | None = None, maximize: bool = False, capturable: bool = False, differentiable: bool = False) -> None`
+- `optim.RMSprop(params: collections.abc.Iterable[torch.Tensor] | collections.abc.Iterable[dict[str, typing.Any]] | collections.abc.Iterable[tuple[str, torch.Tensor]], lr: float | torch.Tensor = 0.01, alpha: float = 0.99, eps: float = 1e-08, weight_decay: float = 0, momentum: float = 0, centered: bool = False, capturable: bool = False, foreach: bool | None = None, maximize: bool = False, differentiable: bool = False) -> None`
+- `optim.Rprop(params: collections.abc.Iterable[torch.Tensor] | collections.abc.Iterable[dict[str, typing.Any]] | collections.abc.Iterable[tuple[str, torch.Tensor]], lr: float | torch.Tensor = 0.01, etas: tuple[float, float] = (0.5, 1.2), step_sizes: tuple[float, float] = (1e-06, 50), *, capturable: bool = False, foreach: bool | None = None, maximize: bool = False, differentiable: bool = False) -> None`
+- `optim.SGD(params: collections.abc.Iterable[torch.Tensor] | collections.abc.Iterable[dict[str, typing.Any]] | collections.abc.Iterable[tuple[str, torch.Tensor]], lr: float | torch.Tensor = 0.001, momentum: float = 0, dampening: float = 0, weight_decay: float | torch.Tensor = 0, nesterov: bool = False, *, maximize: bool = False, foreach: bool | None = None, differentiable: bool = False, fused: bool | None = None) -> None`
+- `optim.SparseAdam(params: collections.abc.Iterable[torch.Tensor] | collections.abc.Iterable[dict[str, typing.Any]] | collections.abc.Iterable[tuple[str, torch.Tensor]], lr: float | torch.Tensor = 0.001, betas: tuple[float, float] = (0.9, 0.999), eps: float = 1e-08, maximize: bool = False) -> None`
+
+## LR schedulers
+
+- `lr_scheduler._LRScheduler(optimizer: 'Optimizer', last_epoch: 'int' = -1) -> 'None'`
+- `lr_scheduler.ChainedScheduler(schedulers: 'Sequence[LRScheduler]', optimizer: 'Optimizer | None' = None) -> 'None'`
+- `lr_scheduler.ConstantLR(optimizer: 'Optimizer', factor: 'float' = 0.3333333333333333, total_iters: 'int' = 5, last_epoch: 'int' = -1) -> 'None'`
+- `lr_scheduler.CosineAnnealingLR(optimizer: 'Optimizer', T_max: 'int', eta_min: 'float' = 0.0, last_epoch: 'int' = -1) -> 'None'`
+- `lr_scheduler.CosineAnnealingWarmRestarts(optimizer: 'Optimizer', T_0: 'int', T_mult: 'int' = 1, eta_min: 'float' = 0.0, last_epoch: 'int' = -1) -> 'None'`
+- `lr_scheduler.CyclicLR(optimizer: 'Optimizer', base_lr: 'float | list[float]', max_lr: 'float | list[float]', step_size_up: 'int' = 2000, step_size_down: 'int | None' = None, mode: "Literal['triangular', 'triangular2', 'exp_range']" = 'triangular', gamma: 'float' = 1.0, scale_fn: 'Callable[[float], float] | None' = None, scale_mode: "Literal['cycle', 'iterations']" = 'cycle', cycle_momentum: 'bool' = True, base_momentum: 'float' = 0.8, max_momentum: 'float' = 0.9, last_epoch: 'int' = -1) -> 'None'`
+- `lr_scheduler.ExponentialLR(optimizer: 'Optimizer', gamma: 'float', last_epoch: 'int' = -1) -> 'None'`
+- `lr_scheduler.LambdaLR(optimizer: 'Optimizer', lr_lambda: 'Callable[[int], float] | list[Callable[[int], float]]', last_epoch: 'int' = -1) -> 'None'`
+- `lr_scheduler.LinearLR(optimizer: 'Optimizer', start_factor: 'float' = 0.3333333333333333, end_factor: 'float' = 1.0, total_iters: 'int' = 5, last_epoch: 'int' = -1) -> 'None'`
+- `lr_scheduler.LRScheduler(optimizer: 'Optimizer', last_epoch: 'int' = -1) -> 'None'`
+- `lr_scheduler.MultiplicativeLR(optimizer: 'Optimizer', lr_lambda: 'Callable[[int], float] | list[Callable[[int], float]]', last_epoch: 'int' = -1) -> 'None'`
+- `lr_scheduler.MultiStepLR(optimizer: 'Optimizer', milestones: 'Iterable[int]', gamma: 'float' = 0.1, last_epoch: 'int' = -1) -> 'None'`
+- `lr_scheduler.OneCycleLR(optimizer: 'Optimizer', max_lr: 'float | list[float]', total_steps: 'int | None' = None, epochs: 'int | None' = None, steps_per_epoch: 'int | None' = None, pct_start: 'float' = 0.3, anneal_strategy: "Literal['cos', 'linear']" = 'cos', cycle_momentum: 'bool' = True, base_momentum: 'float | list[float]' = 0.85, max_momentum: 'float | list[float]' = 0.95, div_factor: 'float' = 25.0, final_div_factor: 'float' = 10000.0, three_phase: 'bool' = False, last_epoch: 'int' = -1) -> 'None'`
+- `lr_scheduler.PolynomialLR(optimizer: 'Optimizer', total_iters: 'int' = 5, power: 'float' = 1.0, last_epoch: 'int' = -1) -> 'None'`
+- `lr_scheduler.ReduceLROnPlateau(optimizer: 'Optimizer', mode: "Literal['min', 'max']" = 'min', factor: 'float' = 0.1, patience: 'int' = 10, threshold: 'float' = 0.0001, threshold_mode: "Literal['rel', 'abs']" = 'rel', cooldown: 'int' = 0, min_lr: 'list[float] | float' = 0, eps: 'float' = 1e-08) -> 'None'`
+- `lr_scheduler.SequentialLR(optimizer: 'Optimizer', schedulers: 'list[LRScheduler]', milestones: 'list[int]', last_epoch: 'int' = -1) -> 'None'`
+- `lr_scheduler.StepLR(optimizer: 'Optimizer', step_size: 'int', gamma: 'float' = 0.1, last_epoch: 'int' = -1) -> 'None'`

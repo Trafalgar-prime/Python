@@ -1,0 +1,1 @@
+definisco le tuple e i set: le tuple sono immutabili mentre i set definiscono dei valori unici al loro interno;

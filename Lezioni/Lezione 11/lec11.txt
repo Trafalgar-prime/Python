@@ -1,0 +1,4 @@
+Python è un linguaggio modulare, il che significa che puoi suddividere il codice in moduli riutilizzabili e organizzarli in pacchetti.
+Questa lezione ti insegnerà a creare, importare e usare moduli e pacchetti in Python.
+Un modulo è semplicemente un file Python (.py) che contiene funzioni, classi o variabili che possono essere riutilizzate in altri file.
+Come creare e come gestire i moduli

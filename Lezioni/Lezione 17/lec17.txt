@@ -1,0 +1,1 @@
+Andiamo avanti con pytorch e i sistemi AI che utilizano torch

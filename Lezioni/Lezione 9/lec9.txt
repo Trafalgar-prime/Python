@@ -1,0 +1,2 @@
+una lezione sugli errori personalizzati e su come funziona il try
+Python fornisce un meccanismo per gestire questi errori in modo elegante: le eccezioni (exceptions).

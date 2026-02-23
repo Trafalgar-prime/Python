@@ -1,0 +1,1 @@
+visto il for, con break e continue, piu abbiamo visto il while

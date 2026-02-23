@@ -1,0 +1,3 @@
+In questo file valuto come funzionano i file di txt e i file csv e i JSON;
+La gestione dei file (File Handling) in Python permette di leggere, scrivere e manipolare file su disco.
+Python fornisce funzioni integrate per lavorare con file di testo (.txt), CSV, JSON e altri formati.

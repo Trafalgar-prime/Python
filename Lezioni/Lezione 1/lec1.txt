@@ -1,0 +1,1 @@
+Type, print e come prendere i valori in input dal terminale
